@@ -6,17 +6,17 @@ import attrs
 def tripdata_validator(instance, attribute, value):
     valid_hex_value_set = set('0123456789abcdefABCDEFxXh ')
     if not all(c in valid_hex_value_set for c in value):
-        raise ValueError(f"The string contains characters which are not compatible with an hexadecimal representation")
-    parsed = value.replace(" ", "")     #TODO: there must be a better way to write this
-    parsed = parsed.replace("0x","")
-    parsed = parsed.replace("0X","")
-    parsed = parsed.replace("h","")     #TODO: this should be done only if 'h' is at the beginning of the string
-    
+        raise ValueError("The string contains characters which are not compatible with an hexadecimal representation")
+    parsed = value.replace(" ", "")     # TODO: there must be a better way to write this
+    parsed = parsed.replace("0x", "")
+    parsed = parsed.replace("0X", "")
+    parsed = parsed.replace("h", "")     # TODO: this should be done only if 'h' is at the beginning of the string
+
     if len(parsed) != 128:
         raise ValueError(f"The string must be 64 bytes long!")
-    
+
     int(parsed, 16)         # raises value error if the parsed string is not a valid hexadecimal
-    
+
 
 @attrs.define
 class TripData():
