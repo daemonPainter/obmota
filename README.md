@@ -1,5 +1,7 @@
 # OBMOTA
 
+[![Coverage Status](https://coveralls.io/repos/github/daemonPainter/obmota/badge.svg?branch=main)](https://coveralls.io/github/daemonPainter/obmota?branch=main)
+
 ## obmota is a utility package for encoding/decoding OBM OTA Packages according to Euro 7/VII definitions
 
 EU Regulation 2024/1257 defines a new concept in Automotive of *On-Board Monitoring* (OBM) which need periodic transmission over the air.
