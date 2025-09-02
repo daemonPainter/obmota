@@ -17,6 +17,10 @@ dependencies = [
 ]
 requires-python = ">=3.10"
 
+[project.urls]
+Homepage = "https://github.com/daemonPainter/obmota"
+Issues = "https://github.com/daemonPainter/obmota/issues"
+
 [project.scripts]
 obmota = "obmota.cli.core:cli"
 
@@ -25,3 +29,6 @@ version = {attr = "obmota.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
