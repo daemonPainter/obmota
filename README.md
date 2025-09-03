@@ -1,6 +1,7 @@
 # OBMOTA
 
 [![Coverage Status](https://coveralls.io/repos/github/daemonPainter/obmota/badge.svg?branch=main)](https://coveralls.io/github/daemonPainter/obmota?branch=main)
+[![OBMOTA CI pipeline](https://github.com/daemonPainter/obmota/actions/workflows/github-actions.yml/badge.svg?branch=main)](https://github.com/daemonPainter/obmota/actions/workflows/github-actions.yml)
 
 ## obmota is a utility package for encoding/decoding OBM OTA Packages according to Euro 7/VII definitions
 
