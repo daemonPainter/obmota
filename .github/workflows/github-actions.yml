@@ -42,4 +42,6 @@ jobs:
         tox -e gh
     - name: Updating Coveralls
       uses: coverallsapp/github-action@v2.3.6
+      with:
+        path-to-lcov: ./coverage.lcov
       
